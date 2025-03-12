@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>Test</title>
 	<script>
 	(function(I,n,f,o,b,i,p){
 	I[b]=I[b]||function(){(I[b].q=I[b].q||[]).push(arguments)};
@@ -15,6 +15,6 @@
 	</script>
 </head>
 <body>
-
+	<h1>TEST</h1>
 </body>
 </html>
