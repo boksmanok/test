@@ -1311,14 +1311,14 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
-  color: #222222;
+  color: #212529;
 }
 
 .team .member .member-info span {
   display: block;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
-  color: #aaaaaa;
+  color: #808080;
 }
 
 .team .member .member-info p {
