@@ -1328,6 +1328,11 @@ section {
   color: #777777;
 }
 
+.team .member img:hover {
+  transition: transform 0.4s ease;
+  transform: scale(1.20);
+}
+
 .team .member:hover .social {
   opacity: 1;
   bottom: 15px;
