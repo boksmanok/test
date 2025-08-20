@@ -80,7 +80,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #0097C2;
+  background: #213369;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -116,7 +116,7 @@ h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #0097C2;
+  background: #213369;
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -260,7 +260,7 @@ h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #0097C2;
+  background-color: #213369;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -277,7 +277,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #0097C2;
+  color: #213369;
 }
 
 .navbar .dropdown ul {
@@ -311,7 +311,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #0097C2;
+  color: #213369;
 }
 
 .navbar .dropdown:hover>ul {
@@ -518,7 +518,7 @@ h6 {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #0097C2;
+  background: #213369;
 }
 
 #hero .btn-get-started:hover {
@@ -609,7 +609,7 @@ section {
   padding: 8px 20px;
   margin: 0;
   background: #e7f1fd;
-  color: #0097C2;
+  color: #213369;
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
@@ -622,7 +622,7 @@ section {
 }
 
 .section-title h3 span {
-  color: #0097C2;
+  color: #213369;
 }
 
 .section-title p {
@@ -718,7 +718,7 @@ section {
 }
 
 .featured-services .icon-box:hover::before {
-  background: #0097C2;
+  background: #213369;
   top: 0;
   border-radius: 0px;
 }
@@ -730,7 +730,7 @@ section {
 .featured-services .icon i {
   font-size: 48px;
   line-height: 1;
-  color: #0097C2;
+  color: #213369;
   transition: all 0.3s ease-in-out;
 }
 
@@ -788,7 +788,7 @@ section {
   font-size: 24px;
   padding: 20px;
   margin-right: 15px;
-  color: #0097C2;
+  color: #213369;
   border-radius: 50px;
 }
 
@@ -1105,7 +1105,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #0097C2;
+  color: #213369;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1296,7 +1296,7 @@ section {
 }
 
 .team .member .social a:hover {
-  background: #0097C2;
+  background: #213369;
 }
 
 .team .member .social i {
@@ -1525,7 +1525,7 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #0097C2;
+  color: #213369;
   border-radius: 50%;
   padding: 8px;
   border: 2px dotted #b3d1fa;
@@ -1616,7 +1616,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #0097C2;
+  background: #213369;
   border: 0;
   padding: 10px 30px;
   color: #fff;
