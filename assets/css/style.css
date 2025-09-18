@@ -905,7 +905,7 @@ section {
 }
 
 .clients img:hover {
-  transform: scale(1.15);
+  transform: scale(1.30);
 }
 
 @media (max-width: 768px) {
