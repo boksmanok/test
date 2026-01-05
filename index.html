@@ -16,7 +16,7 @@
 
     .card {
       background: white;
-      padding: 40px;
+      padding: 100px;
       border-radius: 12px;
       text-align: center;
       box-shadow: 0 10px 25px rgba(0,0,0,0.2);
@@ -40,13 +40,15 @@
     #yes {
       background-color: #4CAF50;
       color: white;
+      position:absolute;
+      right: 190px;
     }
 
     #no {
       background-color: #f44336;
       color: white;
       position: absolute;
-      left: 180px; /* aligned next to Yes */
+      left: 200px; /* aligned next to Yes */
       top: 0;
     }
 
@@ -79,7 +81,7 @@
     let posX = noBtn.offsetLeft;
     let posY = noBtn.offsetTop;
 
-    const speed = 0.08;   // how fast it moves away
+    const speed = 0.25;   // how fast it moves away
     const dangerRadius = 80; // how close the mouse must be
 
     container.addEventListener("mousemove", (e) => {
