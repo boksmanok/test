@@ -1,113 +1,1711 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Important Question</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #ff9a9e;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      padding: 0 10px;
-      text-align: center;
-    }
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    .card {
-      background: #1e1e1e;
-      padding: 25px 20px;
-      border-radius: 12px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.5);
-      max-width: 400px;
-      width: 100%;
-    }
+  <title>Wireless Services Asia</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    h1 {
-      font-size: 1.6rem;
-      margin-bottom: 25px;
-    }
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    button {
-      padding: 14px 28px;
-      margin: 10px;
-      font-size: 1rem;
-      border-radius: 8px;
-      border: none;
-      cursor: pointer;
-      width: 40%;
-      min-width: 100px;
-      transition: transform 0.2s;
-    }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    button:active {
-      transform: scale(0.95);
-    }
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    .yes {
-      background: #4CAF50;
-      color: white;
-    }
-
-    .no {
-      background: #f44336;
-      color: white;
-    }
-
-    #message {
-      margin-top: 15px;
-      font-size: 1rem;
-      color: #ffcc00;
-      min-height: 1.2em;
-    }
-
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 1.3rem;
-      }
-      button {
-        font-size: 0.9rem;
-        padding: 12px 20px;
-        width: 45%;
-      }
-    }
-  </style>
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
+
 <body>
 
-  <div class="card">
-    <h1>Hi Mars! Would you like to go on a date with me on the 17th? 💖</h1>
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">wsworldwide.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+63 2 8846 0117 / +63 2 8899 4674</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> -->
+        <a href="https://www.facebook.com/wsaphilippines1999" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.linkedin.com/company/wirelessservicesasia/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
 
-    <button class="yes" onclick="yesClicked()">Yes</button>
-    <button class="no" id="noBtn" onclick="noClicked()">No</button>
+      </div>
+    </div>
+  </section>
 
-    <div id="message"></div>
-  </div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
 
-  <script>
-    function yesClicked() {
-      document.querySelector(".card").innerHTML = `
-        <h1>Yay! 🎉</h1>
-        <p>I’ll pick the place 😉</p>
-      `;
-    }
+      <h1 class="logo"><a href="index.html"><img src="assets/img/logo-small.png" width="175px"></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
 
-    function noClicked() {
-      const message = document.getElementById("message");
-      const noBtn = document.getElementById("noBtn");
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Who We Are</a></li>
+          <li><a class="nav-link scrollto" href="#clients">Our Partners</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#testimonials">Message From The President</a></li> -->
+          <li><a class="nav-link scrollto" href="#team">Our Team</a></li>
+          <!-- <li><a class="nav-link scrollto " href="#portfolio">Who we are</a></li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <li><a class="nav-link scrollto" href="#contact">Contact us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
-      message.textContent = "Try again please HAHAHAHA.";
+    </div>
+  </header><!-- End Header -->
 
-      // Turn "No" into "Yes"
-      noBtn.textContent = "Yes";
-      noBtn.className = "yes";
-      noBtn.onclick = yesClicked;
-    }
-  </script>
+  <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container" data-aos="zoom-out" data-aos-delay="100">
+        <h1>Wireless Services Asia</h1>
+        <h2>Localizing Global Technologies with WSA</h2>
+        <div class="d-flex">
+          <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        </div>
+      </div>
+    </section><!-- End Hero -->
 
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Who We Are</h2>
+          <h3>Find Out More <span>About Us</span></h3>
+          <p></p>
+        </div>
+
+        <div class="col-lg-12 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100"><p><b>Wireless Services Asia (WSA)</b> was formed in 1999 as a mobile VAS provider. As a result of a management buy-out in 2008, the company has transformed itself to be a carrier grade services company and one of the leading Resellers and Systems Integrators of technology and  business solutions in the Philippines.</p>
+        </div>
+
+        <br><br>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/img/aboutbg.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100"><p><b>WSA</b> partners with world-class technology companies in providing Network and Application solutions to Telecom Services Providers and Enterprise clients.</p>
+            <ul>
+              <li>
+                <div>
+                  <h5>Telecommunications Solutions</h5>
+                    <p>
+                      - Core Network Signaling (SS7, SIP, Diameter) Solutions<br>
+                      - Customer Value Management, Cognitive Loyalty Management, AdMedia<br>
+                      - DNS, Browsing Security, Parental Control, In-Browser Communications<br>
+                      - Intelligent Demarcation Devices<br>
+                      - HP Enterprise Communications & Media Solutions<br>
+                      - Subscriber Revenue Service to monetize traditional cost center assets<br>
+                      - Anti-spam and traffic control<br>
+                      - Fleet Management System based on local landmarks instead of GPS coordinates<br>
+                      - Internet of Things (IoT)<br>
+                      - Operational Intelligence
+                    </p>
+                </div>
+              </li>
+            </ul>
+            <!-- <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p> -->
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/img/aboutbg2.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100"><p><b>Enterprises</b> need to keep up with the disruption caused by emerging technologies and changing customer behavior. The high rate of adoption of mobile devices in the workplace have required the need for better security and device management while customers have become more selective in their choice of products due to easily available information. Customers are also expecting a higher level of customer experience – more personalized product/service offers, better logistics support.</p>
+            <ul>
+              <li>
+                <div>
+                  <h5>Enterprise Solutions</h5>
+                  <p>
+                      - ERP<br>
+                      - Splunk Operational Intelligence Solutions<br>
+                      - Internet of Things (IoT) & Industrial Data<br>
+                      - Security and Compliance<br>
+                      - Anti-spam and traffic control<br>
+                      - MarkLogic Database for Integrating Data from Silos<br>
+                      - Enterprise Wireless Network<br>
+                      - Enterprise Mobility Management
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <!-- <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= Featured Services Section ======= -->
+    <!-- <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Our Partners</h2>
+          <h3>Get to know <span>Our Partners</span></h3>
+          <p></p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><img src="assets/img/logo-small.png" width="75%"></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><img src="assets/img/logo-small.png" width="75%"></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><img src="assets/img/logo-small.png" width="75%"></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><img src="assets/img/logo-small.png" width="75%"></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><img src="assets/img/logo-small.png" width="75%"></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><img src="assets/img/logo-small.png" width="75%"></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+      </div>
+    </section> -->
+    <!-- End Featured Services Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <!-- <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">PHP <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Photoshop <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Skills Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <!-- <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Projects</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hours Of Support</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hard Workers</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Counts Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="section-title">
+          <h2>Our Partners</h2>
+          <h3>Get to Know <span>Our Partners</span></h3>
+          <p></p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/partners/anodot.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/partners/arcon.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/partners/bes.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/partners/blueplanet.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/partners/fortinet.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/partners/freshworks.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/partners/grandtech.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/partners/infinite1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/partners/infobip.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/partners/mailchannels.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/partners/oraclegold.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/partners/oracletalari.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/partners/pelatro.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/partners/softwareag.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/partners/soti.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/partners/spectrumeffect.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/partners/splunk.png" class="img-fluid" alt="">
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Clients Section -->
+
+    <!-- ======= Services Section ======= -->
+    <!-- <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Courses</h2>
+          <h3>Check out our<span>Japanese Language Courses</span></h3>
+
+          <p>Lorem ipsum dolor <p> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-book-reader"></i></div>
+              <h4 class="title"><a href="portfolio-details.html">REGULAR COURSES</a></h4>
+              <p class="description">These courses will prepare you to eligibility of the Japanese Language Proficiency test.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bx bxs-book-reader"></i></div>
+              <h4 class="title"><a href="">SPECIAL COURSES </a></h4>
+              <p class="description">These courses are advance training classes for Japan International Training Cooperation Organization (JITCO) Trainees, Caregivers and for preparation for proficiency examinations.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bx bxs-book-reader"></i></div>
+              <h4 class="title"><a href="">SPECIAL COURSES </a></h4>
+              <p class="description">These courses are advance training classes for Japan International Training Cooperation Organization (JITCO) Trainees, Caregivers and for preparation for proficiency examinations.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-book-open"></i></div>
+              <h4 class="title"><a href="">OTHER SERVICES</a></h4>
+              <p class="description">Review for N3 Proficiency Examination - 100 hours</p>
+              <p class="description">Review for N4 Proficiency Examination - 60 hours</p>
+              <p class="description">Review for N5 Proficiency Examination - 45 hours</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <h3>Check our <span>Services</span></h3>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Sed ut perspiciatis</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4><a href="">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4><a href="">Dele cardo</a></h4>
+              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-arch"></i></div>
+              <h4><a href="">Divera don</a></h4>
+              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> --><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <!-- <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+        <div class="testimonials-swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper">
+              <div class="testimonial-item">
+                <h2>Message from the President</h2>
+                <img src="assets/img/testimonials/president.png" class="testimonial-img" alt="">
+                <h3>Girly B. Paloma</h3>
+                <h4>President / School Head</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  A competent curriculum, well-designed classroom environment, highly skilled instructors, and good culture and practices are the four most critical components of a successful Japanese language learning experience.If you’re looking for a school like this, your search ends with Miraijin Training Center.
+                  <br> <br>
+
+                  Since 2006 thousands of students have benefited from the intense Japanese training offered by the Miraijin Training Center.
+                   <br> <br>
+
+                  With our 13 years of expertise teaching Japanese as a foreign language, our qualified instructors, and our excellent teaching methods and programs, students have high expectations when they sign up at Miraijin Training Center and believe fulfilling their own goals and expectations. Our goal is to armor this students skills that they will need in their future endeavors.
+                   <br> <br>
+
+                   We are pleased that a growing number of students  and clients have choose us as their provider of choice indicates that we are raising the benchmark of our training and will do so for many years to come.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Testimonials Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <!-- <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Who we are</h2>
+          <h3>Events and Activities</h3>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-batches">Batches</li>
+              <li data-filter=".filter-injapan">In Japan</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches zoom">
+            <img src="assets/img/portfolio/BATCHES/1.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Waiting Area</h4>
+              <p>Waiting Area</p>
+              <a href="assets/img/portfolio/waiting_area.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Waiting Area"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/2.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/3.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/4.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/5.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/6.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/7.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/8.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/9.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/10.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/11.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/12.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/13.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/14.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/15.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/16.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/17.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/18.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/19.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/20.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/21.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/22.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/23.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-batches">
+            <img src="assets/img/portfolio/BATCHES/24.JPG" class="img-fluid" alt="">
+          </div>
+
+          
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/1.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Front Door</h4>
+              <p>Front Door</p>
+              <a href="assets/img/portfolio/frontdoor.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Front Door"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/2.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/3.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/4.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/5.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/6.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/7.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/8.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/9.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/10.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/11.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/12.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/13.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/14.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/15.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/16.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/17.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/18.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/19.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/20.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/21.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/22.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/23.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/24.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/25.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/26.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/27.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/28.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/29.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/30.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/31.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/32.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/33.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/34.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/35.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/36.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/37.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/38.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/39.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/40.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/41.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/42.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/43.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/44.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/45.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/46.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/47.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/48.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/49.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/50.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/51.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/52.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/53.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/54.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/55.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/56.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/57.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/58.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/59.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/60.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/61.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/62.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/63.JPG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-injapan">
+            <img src="assets/img/portfolio/INJAPAN/64.JPG" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-boardroom">
+            <img src="assets/img/portfolio/boardroom.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Boardroom</h4>
+              <p>Boardroom</p>
+              <a href="assets/img/portfolio/boardroom.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Boardroom"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-training">
+            <img src="assets/img/portfolio/training_room.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Training Room</h4>
+              <p>Training Room</p>
+              <a href="assets/img/portfolio/training_room.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Training Room"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-caregiver">
+            <img src="assets/img/portfolio/caregiver_room1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Caregiver's Training Room 1</h4>
+              <p>Caregiver's Training Room 1</p>
+              <a href="assets/img/portfolio/caregiver_room1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Caregiver's Training Room 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-caregiver">
+            <img src="assets/img/portfolio/caregiver_room2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Caregiver's Training Room 2</h4>
+              <p>Caregiver's Training Room 2</p>
+              <a href="assets/img/portfolio/caregiver_room2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Caregiver's Training Room 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-employeework">
+            <img src="assets/img/portfolio/employee_workstation1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Employees Workstations 1</h4>
+              <p>Employees Workstations 1</p>
+              <a href="assets/img/portfolio/employee_workstation1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Employees Workstations 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-employeework">
+            <img src="assets/img/portfolio/employee_workstation2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Employees Workstations 2</h4>
+              <p>Employees Workstations 2</p>
+              <a href="assets/img/portfolio/employee_workstation2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Employees Workstations 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-president">
+            <img src="assets/img/portfolio/president_office1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>President's Office 1</h4>
+              <p>President's Office 1</p>
+              <a href="assets/img/portfolio/president_office1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="President's Office 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-president">
+            <img src="assets/img/portfolio/president_office2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>President's Office 2</h4>
+              <p>President's Office 2</p>
+              <a href="assets/img/portfolio/president_office2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="President's Office 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-waitingarea">
+            <img src="assets/img/portfolio/waiting_area1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Waiting Area</h4>
+              <p>Waiting Area</p>
+              <a href="assets/img/portfolio/waiting_area1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Waiting Area"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Our Team</h2>
+          <!-- <p>Lorem Ipsum Dolor Sit Amet.</p> -->
+        </div>
+
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="500">
+            <div class="section-title">
+              <h3>The Management Team</h3>
+            </div>
+          <img src="assets/img/team/ourteam.jpg" class="img-fluid" alt="">
+        </div>
+
+        <br><br>
+
+        <div class="row">
+
+          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <img src="assets/img/team/techteam.png" class="img-fluid" alt="">
+            <div class="section-title">
+              <h3>Technical Services Team</h3>
+            </div>
+          </div> -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <img src="assets/img/team/newimplem.png" class="img-fluid" alt="">
+            <div class="section-title">
+              <h3>Project Implementation</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <img src="assets/img/team/newpostsales.png" class="img-fluid" alt="">
+            <div class="section-title">
+              <h3>Post-Sales Engineering</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <img src="assets/img/team/newaccounthr.png" class="img-fluid" alt="">
+            <div class="section-title">
+              <h3>Support Management</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <img src="assets/img/team/sales2.png" class="img-fluid" alt="">
+            <div class="section-title">
+              <h3>Sales & Account Management</h3>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <img src="assets/img/team/sales2.png" class="img-fluid" alt="">
+            <div class="section-title">
+              <h3>Sales Team</h3>
+            </div>
+          </div> -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <img src="assets/img/team/pm.png" class="img-fluid" alt="">
+            <div class="section-title">
+              <h3>Project Management</h3>
+            </div>
+          </div>
+        </div>
+        
+        <!-- <div class="container">
+          <div class="row">
+            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assets/img/team/8-1.png" class="img-fluid" width="100%" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Manuel R. Delos Santos</h4>
+                  <span>Chairman</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="250">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assets/img/team/10-1.png" class="img-fluid" width="100%" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Atty. Hilario B. Paredes</h4>
+                  <span>Corporate Secretary</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assets/img/team/9-1.png" class="img-fluid" width="100%" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Benjamin R. Bustos, Jr.</h4>
+                  <span>President/CEO</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="350">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assets/img/team/6-1.png" class="img-fluid" width="100%" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Dexter Jose Q. Yaptenco</h4>
+                  <span>Director</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assets/img/team/ike.jpg" class="img-fluid" width="100%" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>IKE Gabriel</h4>
+                  <span>Director</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="section-title">
+          <h3>Officers</h3>
+          <p>Lorem Ipsum Dolor Sit Amet.</p>
+        </div> -->
+
+        <!-- <div class="container">
+          <div class="row">
+            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assets/img/team/9-1.png" class="img-fluid" width="100%" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Benjamin R. Bustos, Jr.</h4>
+                  <span>President/CEO</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="250">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assets/img/team/2.png" class="img-fluid" width="100%" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Ma. Margarita R. Cruz</h4>
+                  <span>Business Unit Head – VAS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assets/img/team/1.png" class="img-fluid" width="100%" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Roberto P. Aguinaldo</h4>
+                  <span>Business Unit Head – Products and Services</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="350">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assets/img/team/6-1.png" class="img-fluid" width="100%" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Dexter Jose Q. Yaptenco</h4>
+                  <span>Technical Support Head</span>
+                </div>
+              </div>
+            </div>
+            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200" style="visibility:hidden">
+              <div class="member">
+                <div class="member-img"></div>
+                <div class="member-info"></div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400" style="visibility:hidden">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Team Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <!-- <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <h3>Check our <span>Pricing</span></h3>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h3>Free</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li class="na">Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Business</h3>
+              <h4><sup>$</sup>19<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>Developer</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <span class="advanced">Advanced</span>
+              <h3>Ultimate</h3>
+              <h4><sup>$</sup>49<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> --><!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <!-- <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>F.A.Q</h2>
+          <h3>Frequently Asked <span>Questions</span></h3>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <ul class="faq-list">
+
+              <li>
+                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section> --><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <h3><span>Contact Us</span></h3>
+          <p>You may contact us through the following details below.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>Unit 301, 3/F ITC Building 337 Gil Puyat Ave., Makati City, Philippines 1209</p><br>
+              <br>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>wsworldwide@gmail.com</p>
+              <p>marketing@wsworldwide.com</p>
+              <br>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>Telephone Nos. (+632) 828-8316 / (+632) 514-3659</p>
+              <p>Telefax No. (+632) 822-5089</p>
+              <p>Mobile Nos. (Globe) +63-917-8148162 <br> (Smart) +63-908-8205287</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-12">
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1216.3427556258!2d121.0222716756037!3d14.562124986550062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c90e799d4821%3A0xd2c64a6b45a68ae4!2sWireless%20Services%20Asia!5e0!3m2!1sen!2sph!4v1755138854018!5m2!1sen!2sph"frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+          </div>
+
+          <!-- <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message">Error</div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <!-- <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <!-- <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>BizLand<span>.</span></h3>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div> -->
+
+          <!-- <div class="col col-sm footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>BizLand</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div> -->
+  </footer>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>
