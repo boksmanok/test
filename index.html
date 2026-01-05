@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Important Question</title>
   <style>
     body {
@@ -11,24 +12,40 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0 10px;
       text-align: center;
     }
 
     .card {
       background: #1e1e1e;
-      padding: 30px;
+      padding: 25px 20px;
       border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 25px;
     }
 
     button {
-      padding: 12px 24px;
+      padding: 14px 28px;
       margin: 10px;
-      font-size: 18px;
+      font-size: 1rem;
       border-radius: 8px;
       border: none;
       cursor: pointer;
+      width: 40%;
+      min-width: 100px;
+      transition: transform 0.2s;
+    }
+
+    button:active {
+      transform: scale(0.95);
     }
 
     .yes {
@@ -43,8 +60,20 @@
 
     #message {
       margin-top: 15px;
-      font-size: 16px;
+      font-size: 1rem;
       color: #ffcc00;
+      min-height: 1.2em;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.3rem;
+      }
+      button {
+        font-size: 0.9rem;
+        padding: 12px 20px;
+        width: 45%;
+      }
     }
   </style>
 </head>
