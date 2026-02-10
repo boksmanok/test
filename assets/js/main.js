@@ -198,6 +198,59 @@
   }
 
   /**
+   * Clients logo carousel - multiple icons, arrows, pause on hover, scale on icon hover
+   */
+  const clientsCarouselEl = document.querySelector('.clients-logo-carousel');
+  const clientsCarouselWrapper = document.querySelector('.clients-carousel-wrapper');
+  if (clientsCarouselEl) {
+    const clientsSwiper = new Swiper('.clients-logo-carousel', {
+      speed: 600,
+      loop: true,
+      slidesPerView: 2,
+      spaceBetween: 20,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false
+      },
+      navigation: {
+        nextEl: '.clients-carousel-next',
+        prevEl: '.clients-carousel-prev'
+      },
+      pagination: {
+        el: '.clients-carousel-pagination',
+        type: 'bullets',
+        clickable: true
+      },
+      breakpoints: {
+        576: {
+          slidesPerView: 3,
+          spaceBetween: 24
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 24
+        },
+        992: {
+          slidesPerView: 5,
+          spaceBetween: 28
+        },
+        1200: {
+          slidesPerView: 6,
+          spaceBetween: 30
+        }
+      }
+    });
+    if (clientsCarouselWrapper && clientsSwiper.autoplay) {
+      clientsCarouselWrapper.addEventListener('mouseenter', function() {
+        clientsSwiper.autoplay.stop();
+      });
+      clientsCarouselWrapper.addEventListener('mouseleave', function() {
+        clientsSwiper.autoplay.start();
+      });
+    }
+  }
+
+  /**
    * Testimonials slider
    */
   new Swiper('.testimonials-slider', {
