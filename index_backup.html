@@ -25,191 +25,6 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <link href="assets/css/style.css" rel="stylesheet">
-  
-  <!-- Activities Section Styles (added) -->
-  <style>
-    /* Activities Section Styling */
-    .activities-slider .card {
-      border: none;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      margin: 15px 0;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      background: #fff;
-      cursor: pointer;
-    }
-    .activities-slider .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.12);
-    }
-    .activities-slider .card-img-top {
-      height: 220px;
-      object-fit: cover;
-      border-bottom: 1px solid #f0f0f0;
-    }
-    .activities-slider .card-body {
-      padding: 25px 20px;
-      flex: 1;
-    }
-    .activities-slider .card-title {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-      color: #0a2e4d;
-    }
-    .activities-slider .activity-date {
-      font-size: 0.95rem;
-      color: #213369;
-      font-weight: 500;
-      margin-bottom: 15px;
-    }
-    .activities-slider .card-text {
-      color: #555;
-      margin-bottom: 20px;
-      font-size: 0.95rem;
-      line-height: 1.6;
-    }
-    /* Thumbnail gallery */
-    .activity-thumb-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 15px;
-      border-top: 1px solid #eaeaea;
-      padding-top: 20px;
-    }
-    .activity-thumb {
-      width: calc(33.333% - 6px);
-      aspect-ratio: 1/1;
-      object-fit: cover;
-      border-radius: 8px;
-      cursor: pointer;
-      border: 2px solid transparent;
-      transition: 0.2s;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .activity-thumb:hover {
-      transform: scale(1.05);
-      border-color: #213369;
-    }
-    /* Slider navigation */
-    .activities-carousel-wrapper {
-      position: relative;
-      padding: 0 40px;
-    }
-    .activities-carousel-prev,
-    .activities-carousel-next {
-      width: 44px;
-      height: 44px;
-      background: #213369;
-      border-radius: 50%;
-      color: #fff;
-    }
-    .activities-carousel-prev {
-      left: -15px;
-    }
-    .activities-carousel-next {
-      right: -15px;
-    }
-    .activities-pagination .swiper-pagination-bullet-active {
-      background: #213369;
-    }
-    /* Modal Styles */
-    .activity-modal .modal-dialog {
-      max-width: 900px;
-    }
-    .activity-modal .modal-content {
-      border: none;
-      border-radius: 16px;
-      overflow: hidden;
-    }
-    .activity-modal .modal-header {
-      background: #213369;
-      color: white;
-      border-bottom: none;
-      padding: 20px 30px;
-    }
-    .activity-modal .modal-title {
-      font-size: 1.8rem;
-      font-weight: 600;
-    }
-    .activity-modal .btn-close {
-      filter: brightness(0) invert(1);
-      opacity: 1;
-    }
-    .activity-modal .modal-body {
-      padding: 30px;
-    }
-    .activity-modal .modal-date {
-      color: #213369;
-      font-size: 1.1rem;
-      font-weight: 500;
-      margin-bottom: 20px;
-    }
-    .activity-modal .modal-description {
-      color: #555;
-      font-size: 1.1rem;
-      line-height: 1.8;
-      margin-bottom: 30px;
-    }
-    .modal-swiper {
-      width: 100%;
-      height: 400px;
-    }
-    .modal-swiper .swiper-slide {
-      text-align: center;
-      background: #f8f9fa;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .modal-swiper .swiper-slide img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-    }
-    .modal-swiper .swiper-button-prev,
-    .modal-swiper .swiper-button-next {
-      color: #213369;
-      background: rgba(255,255,255,0.8);
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-    }
-    /* Lightbox */
-    .lightbox-overlay {
-      position: fixed;
-      top:0; left:0; width:100%; height:100%;
-      background: rgba(0,0,0,0.9);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-      cursor: pointer;
-    }
-    .lightbox-overlay img {
-      max-width: 90%;
-      max-height: 90%;
-      border-radius: 12px;
-    }
-    .activities-loading {
-      text-align: center;
-      padding: 50px;
-      color: #666;
-    }
-    @keyframes spin {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-    .spin {
-      animation: spin 1s linear infinite;
-      display: inline-block;
-    }
-  </style>
 </head>
 
 <body>
@@ -248,8 +63,23 @@
           <!-- <li><a class="nav-link scrollto" href="#testimonials">Message From The President</a></li> -->
           <li><a class="nav-link scrollto " href="#portfolio">Our Solutions</a></li>
           <li><a class="nav-link scrollto" href="#team">Our Team</a></li>
-          <!-- NEW: Activities menu item added -->
-          <li><a class="nav-link scrollto" href="#activities">Activities</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
           <li><a class="nav-link scrollto" href="#contact">Contact us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -277,7 +107,7 @@
           <p></p>
         </div>
 
-        <div class="col-lg-12 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100"><p><b>Wireless Services Asia (WSA)</b> was founded in 1999 as a mobile value-added services (VAS) provider. In 2008, the company transformed into a carrier-grade services organization and emerged as one of the Philippines' leading resellers of integrated technology and business solutions for the telecommunications industry. 
+        <div class="col-lg-12 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100"><p><b>Wireless Services Asia (WSA)</b> was founded in 1999 as a mobile value-added services (VAS) provider. In 2008, the company transformed into a carrier-grade services organization and emerged as one of the Philippines’ leading resellers of integrated technology and business solutions for the telecommunications industry. 
 
         <br><br>
 
@@ -288,9 +118,235 @@
         Today, <b>WSA</b> collaborates with world-class technology partners to provide advanced networking and application solutions, supporting communications service providers and enterprise clients in achieving greater efficiency, scalability, and innovation across their vertical markets.</p>
         </div>
 
+        <!-- <div class="row">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/img/aboutbg.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100"><p><b>WSA</b> partners with world-class technology companies in providing Network and Application solutions to Telecom Services Providers and Enterprise clients.</p>
+            <ul>
+              <li>
+                <div>
+                  <h5>Telecommunications Solutions</h5>
+                    <p>
+                      - Core Network Signaling (SS7, SIP, Diameter) Solutions<br>
+                      - Customer Value Management, Cognitive Loyalty Management, AdMedia<br>
+                      - DNS, Browsing Security, Parental Control, In-Browser Communications<br>
+                      - Intelligent Demarcation Devices<br>
+                      - HP Enterprise Communications & Media Solutions<br>
+                      - Subscriber Revenue Service to monetize traditional cost center assets<br>
+                      - Anti-spam and traffic control<br>
+                      - Fleet Management System based on local landmarks instead of GPS coordinates<br>
+                      - Internet of Things (IoT)<br>
+                      - Operational Intelligence
+                    </p>
+                </div>
+              </li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/img/aboutbg2.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100"><p><b>Enterprises</b> need to keep up with the disruption caused by emerging technologies and changing customer behavior. The high rate of adoption of mobile devices in the workplace have required the need for better security and device management while customers have become more selective in their choice of products due to easily available information. Customers are also expecting a higher level of customer experience – more personalized product/service offers, better logistics support.</p>
+            <ul>
+              <li>
+                <div>
+                  <h5>Enterprise Solutions</h5>
+                  <p>
+                      - ERP<br>
+                      - Splunk Operational Intelligence Solutions<br>
+                      - Internet of Things (IoT) & Industrial Data<br>
+                      - Security and Compliance<br>
+                      - Anti-spam and traffic control<br>
+                      - MarkLogic Database for Integrating Data from Silos<br>
+                      - Enterprise Wireless Network<br>
+                      - Enterprise Mobility Management
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </div> -->
       </div>
     </section>
     <!-- End About Section -->
+
+    <!-- ======= Featured Services Section ======= -->
+    <!-- <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Our Partners</h2>
+          <h3>Get to know <span>Our Partners</span></h3>
+          <p></p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><img src="assets/img/logo-small.png" width="75%"></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><img src="assets/img/logo-small.png" width="75%"></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><img src="assets/img/logo-small.png" width="75%"></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><img src="assets/img/logo-small.png" width="75%"></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><img src="assets/img/logo-small.png" width="75%"></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><img src="assets/img/logo-small.png" width="75%"></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+      </div>
+    </section> -->
+    <!-- End Featured Services Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <!-- <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">PHP <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Photoshop <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Skills Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <!-- <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Projects</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hours Of Support</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hard Workers</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Counts Section -->
 
     <!-- ======= Partners Section ======= -->
     <section id="partners" class="partners section-bg">
@@ -545,7 +601,7 @@
                   <img src="assets/img/partners/withsecure.png" class="img-fluid" alt="WithSecure">
                 </div>
                 <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>WithSecure Cloud Protection for Salesforce is a native Salesforce security solution that protects your Salesforce environment against malware, phishing, and advanced cyber threats that Salesforce's built in tools do not scan for — directly and automatically inside the Salesforce platform.</p>
+                  <p>WithSecure Cloud Protection for Salesforce is a native Salesforce security solution that protects your Salesforce environment against malware, phishing, and advanced cyber threats that Salesforce’s built in tools do not scan for — directly and automatically inside the Salesforce platform.</p>
                 </div>
               </div>
             </div>
@@ -632,6 +688,209 @@
     </section>
     <!-- End Clients Logo Carousel Section -->
 
+    <!-- ======= Services Section ======= -->
+      <!-- <section id="featured-services" class="featured-services">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-title">
+            <h2>Courses</h2>
+            <h3>Check out our<span>Japanese Language Courses</span></h3>
+
+            <p>Lorem ipsum dolor <p> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon"><i class="bx bx-book-reader"></i></div>
+                <h4 class="title"><a href="portfolio-details.html">REGULAR COURSES</a></h4>
+                <p class="description">These courses will prepare you to eligibility of the Japanese Language Proficiency test.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon"><i class="bx bxs-book-reader"></i></div>
+                <h4 class="title"><a href="">SPECIAL COURSES </a></h4>
+                <p class="description">These courses are advance training classes for Japan International Training Cooperation Organization (JITCO) Trainees, Caregivers and for preparation for proficiency examinations.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon"><i class="bx bxs-book-reader"></i></div>
+                <h4 class="title"><a href="">SPECIAL COURSES </a></h4>
+                <p class="description">These courses are advance training classes for Japan International Training Cooperation Organization (JITCO) Trainees, Caregivers and for preparation for proficiency examinations.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon"><i class="bx bx-book-open"></i></div>
+                <h4 class="title"><a href="">OTHER SERVICES</a></h4>
+                <p class="description">Review for N3 Proficiency Examination - 100 hours</p>
+                <p class="description">Review for N4 Proficiency Examination - 60 hours</p>
+                <p class="description">Review for N5 Proficiency Examination - 45 hours</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section> -->
+      <!-- <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-title">
+            <h2>Services</h2>
+            <h3>Check our <span>Services</span></h3>
+            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <h4><a href="">Lorem Ipsum</a></h4>
+                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4><a href="">Sed ut perspiciatis</a></h4>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-tachometer"></i></div>
+                <h4><a href="">Magni Dolores</a></h4>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-world"></i></div>
+                <h4><a href="">Nemo Enim</a></h4>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-slideshow"></i></div>
+                <h4><a href="">Dele cardo</a></h4>
+                <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-arch"></i></div>
+                <h4><a href="">Divera don</a></h4>
+                <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+    </section> --><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+      <!-- <section id="testimonials" class="testimonials">
+        <div class="container" data-aos="zoom-in">
+          <div class="testimonials-swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+
+              <div class="swiper">
+                <div class="testimonial-item">
+                  <h2>Message from the President</h2>
+                  <img src="assets/img/testimonials/president.png" class="testimonial-img" alt="">
+                  <h3>Girly B. Paloma</h3>
+                  <h4>President / School Head</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    A competent curriculum, well-designed classroom environment, highly skilled instructors, and good culture and practices are the four most critical components of a successful Japanese language learning experience.If you’re looking for a school like this, your search ends with Miraijin Training Center.
+                    <br> <br>
+
+                    Since 2006 thousands of students have benefited from the intense Japanese training offered by the Miraijin Training Center.
+                     <br> <br>
+
+                    With our 13 years of expertise teaching Japanese as a foreign language, our qualified instructors, and our excellent teaching methods and programs, students have high expectations when they sign up at Miraijin Training Center and believe fulfilling their own goals and expectations. Our goal is to armor this students skills that they will need in their future endeavors.
+                     <br> <br>
+
+                     We are pleased that a growing number of students  and clients have choose us as their provider of choice indicates that we are raising the benchmark of our training and will do so for many years to come.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </section> -->
+    <!-- End Testimonials Section -->
+    
     <!-- ======= Solutions Section ======= -->
       <section id="portfolio" class="portfolio">
         <div class="container" data-aos="fade-up">
@@ -1039,35 +1298,166 @@
     </section>
     <!-- End Team Section -->
 
-    <!-- ======= NEW ACTIVITIES SECTION ======= -->
-    <section id="activities" class="activities section-bg">
+    <!-- ======= Pricing Section ======= -->
+    <!-- <section id="pricing" class="pricing">
       <div class="container" data-aos="fade-up">
+
         <div class="section-title">
-          <h2>Activities</h2>
-          <h3>Latest <span>Events & Activities</span></h3>
-          <p>Stay updated with our recent engagements and events</p>
+          <h2>Pricing</h2>
+          <h3>Check our <span>Pricing</span></h3>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
         </div>
 
-        <div class="activities-carousel-wrapper">
-          <div class="swiper-button-prev activities-carousel-prev"></div>
-          <div class="swiper activities-slider swiper-activities">
-            <div class="swiper-wrapper" id="activities-container">
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card-body activities-loading">
-                    <i class="bi bi-arrow-repeat spin" style="font-size: 2rem; color: #213369;"></i>
-                    <p class="mt-3">Loading activities...</p>
-                  </div>
-                </div>
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h3>Free</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li class="na">Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
               </div>
             </div>
-            <div class="swiper-pagination activities-pagination"></div>
           </div>
-          <div class="swiper-button-next activities-carousel-next"></div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Business</h3>
+              <h4><sup>$</sup>19<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>Developer</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <span class="advanced">Advanced</span>
+              <h3>Ultimate</h3>
+              <h4><sup>$</sup>49<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
         </div>
+
       </div>
-    </section>
-    <!-- End Activities Section -->
+    </section> --><!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <!-- <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>F.A.Q</h2>
+          <h3>Frequently Asked <span>Questions</span></h3>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <ul class="faq-list">
+
+              <li>
+                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section> --><!-- End Frequently Asked Questions Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -1228,30 +1618,6 @@
     </div> -->
   </footer>
 
-  <!-- Activity Modal -->
-  <div class="modal fade activity-modal" id="activityModal" tabindex="-1" aria-labelledby="activityModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="activityModalLabel">Activity Title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="modal-date" id="modal-date"></div>
-          <div class="modal-description" id="modal-description"></div>
-          <div class="modal-image-slider">
-            <div class="swiper modal-swiper" id="modalSwiper">
-              <div class="swiper-wrapper" id="modal-swiper-wrapper"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -1267,173 +1633,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <!-- Activities Script - Reads from activities.json -->
-  <script>
-    (function() {
-      let activitiesData = [];
-      let modalSwiper = null;
-      let activitiesSwiper = null;
-
-      // Fetch from activities.json
-      fetch('activities.json')
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('Failed to load activities.json');
-          }
-          return response.json();
-        })
-        .then(activities => {
-          if (activities && activities.length > 0) {
-            activitiesData = activities;
-            renderActivities(activities);
-          } else {
-            showEmptyState();
-          }
-        })
-        .catch(error => {
-          console.error('Error loading activities:', error);
-          showEmptyState();
-        });
-
-      function showEmptyState() {
-        const container = document.getElementById('activities-container');
-        if (!container) return;
-        
-        container.innerHTML = `
-          <div class="swiper-slide">
-            <div class="card">
-              <div class="card-body text-center py-5">
-                <i class="bi bi-calendar-x" style="font-size: 3rem; color: #ccc;"></i>
-                <p class="mt-3 text-muted">No activities to display at this time.</p>
-              </div>
-            </div>
-          </div>
-        `;
-        
-        setTimeout(initSwiper, 100);
-      }
-
-      function renderActivities(activities) {
-        const container = document.getElementById('activities-container');
-        if (!container) return;
-        container.innerHTML = '';
-
-        activities.forEach((act, index) => {
-          const slide = document.createElement('div');
-          slide.className = 'swiper-slide';
-          
-          let thumbsHtml = '<div class="activity-thumb-gallery">';
-          if (act.photos && act.photos.length > 0) {
-            const maxThumbnails = Math.min(3, act.photos.length);
-            for (let i = 0; i < maxThumbnails; i++) {
-              thumbsHtml += `<img src="${act.photos[i]}" class="activity-thumb" alt="thumbnail" onclick="event.stopPropagation(); window.showLightbox('${act.photos[i]}')" onerror="this.src='assets/img/logo-small.png'">`;
-            }
-          }
-          thumbsHtml += '</div>';
-
-          const mainImage = (act.photos && act.photos.length) ? act.photos[0] : 'assets/img/logo-small.png';
-
-          slide.innerHTML = `
-            <div class="card" data-activity-index="${index}">
-              <img src="${mainImage}" class="card-img-top" alt="${act.title}" onerror="this.src='assets/img/logo-small.png'">
-              <div class="card-body">
-                <h5 class="card-title">${act.title}</h5>
-                <p class="activity-date"><i class="bi bi-calendar-event"></i> ${act.date}</p>
-                <p class="card-text">${act.description.substring(0, 120)}${act.description.length > 120 ? '...' : ''}</p>
-                ${thumbsHtml}
-              </div>
-            </div>
-          `;
-          container.appendChild(slide);
-        });
-
-        // Add click handlers
-        setTimeout(() => {
-          document.querySelectorAll('.activities-slider .card').forEach(card => {
-            card.addEventListener('click', function(e) {
-              if (e.target.classList.contains('activity-thumb')) return;
-              const index = this.dataset.activityIndex;
-              if (index !== undefined) openActivityModal(parseInt(index));
-            });
-          });
-        }, 100);
-
-        initSwiper();
-      }
-
-      window.showLightbox = function(src) {
-        const overlay = document.createElement('div');
-        overlay.className = 'lightbox-overlay';
-        overlay.onclick = () => document.body.removeChild(overlay);
-        const img = document.createElement('img');
-        img.src = src;
-        overlay.appendChild(img);
-        document.body.appendChild(overlay);
-      };
-
-      function openActivityModal(index) {
-        const activity = activitiesData[index];
-        if (!activity) return;
-
-        document.getElementById('activityModalLabel').textContent = activity.title;
-        document.getElementById('modal-date').innerHTML = `<i class="bi bi-calendar-event"></i> ${activity.date}`;
-        document.getElementById('modal-description').textContent = activity.description;
-
-        const swiperWrapper = document.getElementById('modal-swiper-wrapper');
-        swiperWrapper.innerHTML = '';
-
-        if (activity.photos && activity.photos.length > 0) {
-          activity.photos.forEach(photo => {
-            const slide = document.createElement('div');
-            slide.className = 'swiper-slide';
-            slide.innerHTML = `<img src="${photo}" alt="${activity.title}" onerror="this.src='assets/img/logo-small.png'">`;
-            swiperWrapper.appendChild(slide);
-          });
-        } else {
-          const slide = document.createElement('div');
-          slide.className = 'swiper-slide';
-          slide.innerHTML = `<img src="assets/img/logo-small.png" alt="No image available">`;
-          swiperWrapper.appendChild(slide);
-        }
-
-        const modal = new bootstrap.Modal(document.getElementById('activityModal'));
-        modal.show();
-
-        setTimeout(() => {
-          if (modalSwiper) modalSwiper.destroy(true, true);
-          modalSwiper = new Swiper('.modal-swiper', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            pagination: { el: '.modal-swiper .swiper-pagination', clickable: true },
-            navigation: { nextEl: '.modal-swiper .swiper-button-next', prevEl: '.modal-swiper .swiper-button-prev' },
-            autoplay: { delay: 3000, disableOnInteraction: false }
-          });
-        }, 300);
-      }
-
-      function initSwiper() {
-        if (activitiesSwiper) activitiesSwiper.destroy(true, true);
-        activitiesSwiper = new Swiper('.swiper-activities', {
-          slidesPerView: 1,
-          spaceBetween: 30,
-          loop: true,
-          pagination: { el: '.activities-pagination', clickable: true, dynamicBullets: true },
-          navigation: { nextEl: '.activities-carousel-next', prevEl: '.activities-carousel-prev' },
-          breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
-          autoplay: { delay: 5000, disableOnInteraction: false }
-        });
-      }
-
-      document.getElementById('activityModal').addEventListener('hidden.bs.modal', function() {
-        if (modalSwiper) {
-          modalSwiper.destroy(true, true);
-          modalSwiper = null;
-        }
-      });
-    })();
-  </script>
 </body>
 
 </html>
