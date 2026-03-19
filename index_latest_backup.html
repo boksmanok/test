@@ -209,70 +209,6 @@
       animation: spin 1s linear infinite;
       display: inline-block;
     }
-
-    /* Partner card styles - reused for solutions */
-    .partner-flip-card {
-      background-color: transparent;
-      width: 100%;
-      height: 200px;
-      perspective: 1000px;
-      margin-bottom: 30px;
-    }
-
-    .partner-flip-card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      transition: transform 0.6s;
-      transform-style: preserve-3d;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-      border-radius: 10px;
-    }
-
-    .partner-flip-card:hover .partner-flip-card-inner {
-      transform: rotateY(180deg);
-    }
-
-    .partner-flip-card-front, .partner-flip-card-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      padding: 20px;
-    }
-
-    .partner-flip-card-front {
-      background-color: #fff;
-      color: black;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .partner-flip-card-front img {
-      max-width: 80%;
-      max-height: 80%;
-      object-fit: contain;
-    }
-
-    .partner-flip-card-back {
-      background-color: #213369;
-      color: white;
-      transform: rotateY(180deg);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      line-height: 1.6;
-    }
-
-    .partner-flip-card-back p {
-      margin: 0;
-      padding: 0 10px;
-    }
   </style>
 </head>
 
@@ -697,451 +633,151 @@
     <!-- End Clients Logo Carousel Section -->
 
     <!-- ======= Solutions Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
-    
-        <div class="section-title">
-          <h2>Our Solutions</h2>
-          <h3>Explore Our Solutions</h3>
+      <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
+      
+          <div class="section-title">
+            <h2>Our Solutions</h2>
+            <h3>Explore Our Solutions</h3>
+          </div>
+      
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <br>
+                <li data-filter=".filter-core-network">Core Network (Software &amp; Hardware)</li>
+                <li data-filter=".filter-unified-communications">Unified Communications Platform</li>
+                <li data-filter=".filter-workload-automation">Workload Automation</li>
+                <li data-filter=".filter-access-cpe">Access - Customer Premise Equipment</li>
+                <br><br>
+                <li data-filter=".filter-marketing-support">Marketing &amp; Customer Support Tools</li>
+                <li data-filter=".filter-business-cyber">Business Software &amp; Cybersecurity</li>
+                <li data-filter=".filter-monitoring-analytics">System Monitoring &amp; Analytics</li>
+                <li data-filter=".filter-network-management">Network Management &amp; Device Security</li>
+                <li data-filter=".filter-data-center">Data Center &amp; Colocation</li>
+                <li data-filter=".filter-hardware-equipment">Hardware &amp; Equipment</li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+            <!-- Core Network (Software & Hardware) -->
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-core-network">
+              <img src="assets/img/solutions/oracletelco.png" class="img-fluid" alt="Oracle Telco">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-core-network">
+              <img src="assets/img/solutions/blueplanet.png" class="img-fluid" alt="Blue Planet">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-core-network">
+              <img src="assets/img/solutions/fusionlayer.png" class="img-fluid" alt="Fusion Layer">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-core-network">
+              <img src="assets/img/solutions/spectrum.png" class="img-fluid" alt="Spectrum">
+            </div>
+      
+            <!-- Unified Communications Platform -->
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-unified-communications">
+              <img src="assets/img/solutions/pelatro.png" class="img-fluid" alt="Pelatro">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-unified-communications filter-marketing-support">
+              <img src="assets/img/solutions/infobip.png" class="img-fluid" alt="Infobip">
+            </div>
+      
+            <!-- Workload Automation -->
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-workload-automation">
+              <img src="assets/img/solutions/betasystem.png" class="img-fluid" alt="Beta System">
+            </div>
+      
+            <!-- Access - Customer Premise Equipment -->
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-access-cpe">
+              <img src="assets/img/solutions/edgility.png" class="img-fluid" alt="Edgility">
+            </div>
+      
+            <!-- Marketing & Customer Support Tools -->
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-marketing-support">
+              <img src="assets/img/solutions/freshworks.png" class="img-fluid" alt="Freshworks">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-marketing-support">
+              <img src="assets/img/solutions/bes.png" class="img-fluid" alt="BES">
+            </div>
+      
+            <!-- Business Software & Cybersecurity -->
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-business-cyber">
+              <img src="assets/img/solutions/helix.png" class="img-fluid" alt="Helix">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-business-cyber">
+              <img src="assets/img/solutions/softwareag.png" class="img-fluid" alt="Software AG">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-business-cyber">
+              <img src="assets/img/solutions/arcon.png" class="img-fluid" alt="Arcon">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-business-cyber">
+              <img src="assets/img/solutions/cyble.png" class="img-fluid" alt="Cyble">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-business-cyber">
+              <img src="assets/img/solutions/everestims.png" class="img-fluid" alt="EverestIMS">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-business-cyber">
+              <img src="assets/img/solutions/seclore.png" class="img-fluid" alt="Seclore">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-business-cyber">
+              <img src="assets/img/solutions/semperis.png" class="img-fluid" alt="Semperis">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-business-cyber">
+              <img src="assets/img/solutions/viascope.png" class="img-fluid" alt="Viascope">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-business-cyber">
+              <img src="assets/img/solutions/xmcyber.png" class="img-fluid" alt="XM Cyber">
+            </div>
+      
+            <!-- System Monitoring & Analytics -->
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-monitoring-analytics">
+              <img src="assets/img/solutions/splunk.png" class="img-fluid" alt="Splunk">
+            </div>
+      
+            <!-- Network Management & Device Security -->
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-network-management">
+              <img src="assets/img/solutions/sotixsight.png" class="img-fluid" alt="SOTI XSight">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-network-management">
+              <img src="assets/img/solutions/sotimc.png" class="img-fluid" alt="SOTI MobiControl">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-network-management">
+              <img src="assets/img/solutions/soticonnect.png" class="img-fluid" alt="SOTI Connect">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-network-management">
+              <img src="assets/img/solutions/sotisnap.png" class="img-fluid" alt="SOTI Snap">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-network-management">
+              <img src="assets/img/solutions/oracleent.png" class="img-fluid" alt="Oracle Enterprise">
+            </div>
+      
+            <!-- Data Center & Colocation -->
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-data-center">
+              <img src="assets/img/solutions/vitro.png" class="img-fluid" alt="Vitro">
+            </div>
+      
+            <!-- Hardware & Equipment -->
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-hardware-equipment">
+              <img src="assets/img/solutions/canon.png" class="img-fluid" alt="Canon">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-hardware-equipment">
+              <img src="assets/img/solutions/epson.png" class="img-fluid" alt="Epson">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-hardware-equipment">
+              <img src="assets/img/solutions/ecline.png" class="img-fluid" alt="Ecline">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-hardware-equipment">
+              <img src="assets/img/solutions/histone.png" class="img-fluid" alt="Histone">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-hardware-equipment">
+              <img src="assets/img/solutions/imin.png" class="img-fluid" alt="iMin">
+            </div>
+      
+          </div>
         </div>
-    
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <br>
-              <li data-filter=".filter-core-network">Core Network (Software &amp; Hardware)</li>
-              <li data-filter=".filter-unified-communications">Unified Communications Platform</li>
-              <li data-filter=".filter-workload-automation">Workload Automation</li>
-              <li data-filter=".filter-access-cpe">Access - Customer Premise Equipment</li>
-              <br><br>
-              <li data-filter=".filter-marketing-support">Marketing &amp; Customer Support Tools</li>
-              <li data-filter=".filter-business-cyber">Business Software &amp; Cybersecurity</li>
-              <li data-filter=".filter-monitoring-analytics">System Monitoring &amp; Analytics</li>
-              <li data-filter=".filter-network-management">Network Management &amp; Device Security</li>
-              <li data-filter=".filter-data-center">Data Center &amp; Colocation</li>
-              <li data-filter=".filter-hardware-equipment">Hardware &amp; Equipment</li>
-            </ul>
-          </div>
-        </div>
-    
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-          <!-- Core Network (Software & Hardware) -->
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-core-network">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/oracletelco.png" class="img-fluid" alt="Oracle Telco">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Oracle Communications - Complete signaling solutions across 2G, 3G, and 4G networks</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-core-network">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/blueplanet.png" class="img-fluid" alt="Blue Planet">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Real-time digital twin capabilities for multi-layer transport network optimization</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-core-network">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/fusionlayer.png" class="img-fluid" alt="Fusion Layer">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Advanced network layer solutions for enhanced connectivity and performance</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-core-network">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/spectrum.png" class="img-fluid" alt="Spectrum">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Automated ML-driven analysis and closed-loop mitigation of RF interference</p>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-          <!-- Unified Communications Platform -->
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-unified-communications">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/pelatro.png" class="img-fluid" alt="Pelatro">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Smart marketing platform that helps you understand and analyse your market better</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-unified-communications filter-marketing-support">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/infobip.png" class="img-fluid" alt="Infobip">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Global cloud communications platform for multi-channel customer engagement</p>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-          <!-- Workload Automation -->
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-workload-automation">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/betasystem.png" class="img-fluid" alt="Beta System">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Rated #1 in Work Load Automation utilizing modern, scalable, reliable architecture</p>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-          <!-- Access - Customer Premise Equipment -->
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-access-cpe">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/edgility.png" class="img-fluid" alt="Edgility">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Customer premise equipment for enhanced network edge connectivity</p>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-          <!-- Marketing & Customer Support Tools -->
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-marketing-support">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/freshworks.png" class="img-fluid" alt="Freshworks">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Omnichannel Customer Solutions Services for modern businesses</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-marketing-support">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/bes.png" class="img-fluid" alt="BES">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Customizable chatbot services powered by AI technology</p>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-          <!-- Business Software & Cybersecurity -->
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-business-cyber">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/helix.png" class="img-fluid" alt="Helix">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Advanced cybersecurity solutions for enterprise protection</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-business-cyber">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/softwareag.png" class="img-fluid" alt="Software AG">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Digital Business Platform to improve customer interaction & create business opportunities</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-business-cyber">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/arcon.png" class="img-fluid" alt="Arcon">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Privileged Access and Identity Management (PAIM) solutions</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-business-cyber">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/cyble.png" class="img-fluid" alt="Cyble">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>AI-powered threat intelligence for proactive cyber defense</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-business-cyber">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/everestims.png" class="img-fluid" alt="EverestIMS">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Integrated management solutions for business optimization</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-business-cyber">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/seclore.png" class="img-fluid" alt="Seclore">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Data-centric security for persistent protection of sensitive information</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-business-cyber">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/semperis.png" class="img-fluid" alt="Semperis">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Enterprise identity protection and recovery solutions</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-business-cyber">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/viascope.png" class="img-fluid" alt="Viascope">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Continuous discovery of vulnerabilities across hybrid environments</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-business-cyber">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/xmcyber.png" class="img-fluid" alt="XM Cyber">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Attack path management for continuous threat exposure monitoring</p>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-          <!-- System Monitoring & Analytics -->
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-monitoring-analytics">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/splunk.png" class="img-fluid" alt="Splunk">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Collects, indexes and harnesses fast moving IT data from all of your IT systems</p>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-          <!-- Network Management & Device Security -->
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-network-management">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/sotixsight.png" class="img-fluid" alt="SOTI XSight">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Advanced analytics and IoT management for enterprise mobility</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-network-management">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/sotimc.png" class="img-fluid" alt="SOTI MobiControl">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Enterprise mobility management for comprehensive device control</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-network-management">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/soticonnect.png" class="img-fluid" alt="SOTI Connect">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>IoT device management and connectivity solutions</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-network-management">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/sotisnap.png" class="img-fluid" alt="SOTI Snap">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Rapid mobile app development for business productivity</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-network-management">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/oracleent.png" class="img-fluid" alt="Oracle Enterprise">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Enterprise-grade network management and security solutions</p>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-          <!-- Data Center & Colocation -->
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-data-center">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/vitro.png" class="img-fluid" alt="Vitro">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Data center and colocation services for enterprise infrastructure</p>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-          <!-- Hardware & Equipment -->
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-hardware-equipment">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/canon.png" class="img-fluid" alt="Canon">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>High-quality imaging and printing solutions for business</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-hardware-equipment">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/epson.png" class="img-fluid" alt="Epson">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Point-of-sale and business printing solutions</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-hardware-equipment">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/ecline.png" class="img-fluid" alt="Ecline">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Professional business equipment and hardware solutions</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-hardware-equipment">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/histone.png" class="img-fluid" alt="Histone">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Enterprise hardware solutions for business operations</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter-hardware-equipment">
-            <div class="partner-flip-card">
-              <div class="partner-flip-card-inner">
-                <div class="partner-flip-card-front d-flex align-items-center justify-content-center">
-                  <img src="assets/img/solutions/imin.png" class="img-fluid" alt="iMin">
-                </div>
-                <div class="partner-flip-card-back d-flex align-items-center justify-content-center">
-                  <p>Innovative point-of-sale hardware and accessories</p>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-        </div>
-      </div>
-    </section>
+      </section>
     <!-- End Solutions Section -->
 
     <!-- ======= Team Section ======= -->
