@@ -273,6 +273,51 @@
       margin: 0;
       padding: 0 10px;
     }
+
+    /* DROPDOWN FILTER STYLES - REPLACES ORIGINAL BUTTON LIST */
+    .filter-dropdown-container {
+      width: 100%;
+      max-width: 550px;
+      margin: 0 auto 40px auto;
+      position: relative;
+    }
+    .filter-dropdown-select {
+      width: 100%;
+      padding: 14px 24px;
+      font-size: 1rem;
+      font-weight: 500;
+      background-color: #fff;
+      border: 2px solid #213369;
+      border-radius: 50px;
+      color: #213369;
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23213369' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
+      background-repeat: no-repeat;
+      background-position: right 20px center;
+      background-size: 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      font-family: inherit;
+    }
+    .filter-dropdown-select:hover,
+    .filter-dropdown-select:focus {
+      background-color: #f8f9ff;
+      border-color: #0a2e4d;
+      outline: none;
+      box-shadow: 0 4px 12px rgba(33,51,105,0.2);
+    }
+    /* Hide original filter list */
+    #portfolio-flters {
+      display: none !important;
+    }
+    @media (max-width: 768px) {
+      .filter-dropdown-container {
+        max-width: 100%;
+        padding: 0 15px;
+      }
+    }
   </style>
 </head>
 
@@ -289,7 +334,7 @@
         <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
           <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> -->
         <a href="https://www.facebook.com/wsaphilippines1999" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.linkedin.com/company/wirelessservicesasia/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="https://www.linkedin.com/company/wirelessservicesasia/" class="linkedin"><i class="bi bi-linkedin"></i></a>
 
       </div>
     </div>
@@ -696,7 +741,7 @@
     </section>
     <!-- End Clients Logo Carousel Section -->
 
-    <!-- ======= Solutions Section ======= -->
+    <!-- ======= Solutions Section WITH DROPDOWN FILTER ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
     
@@ -705,16 +750,16 @@
           <h3>Explore Our Solutions</h3>
         </div>
     
+        <!-- DROPDOWN FILTER - Replaces original button list -->
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
+            <!-- Original filter UL (hidden via CSS) -->
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <br>
               <li data-filter=".filter-core-network">Core Network (Software &amp; Hardware)</li>
               <li data-filter=".filter-unified-communications">Unified Communications Platform</li>
               <li data-filter=".filter-workload-automation">Workload Automation</li>
               <li data-filter=".filter-access-cpe">Access - Customer Premise Equipment</li>
-              <br><br>
               <li data-filter=".filter-marketing-support">Marketing &amp; Customer Support Tools</li>
               <li data-filter=".filter-business-cyber">Business Software &amp; Cybersecurity</li>
               <li data-filter=".filter-monitoring-analytics">System Monitoring &amp; Analytics</li>
@@ -722,6 +767,23 @@
               <li data-filter=".filter-data-center">Data Center &amp; Colocation</li>
               <li data-filter=".filter-hardware-equipment">Hardware &amp; Equipment</li>
             </ul>
+
+            <!-- NEW DROPDOWN SELECT -->
+            <div class="filter-dropdown-container">
+              <select id="solutionFilterDropdown" class="filter-dropdown-select">
+                <option value="*">🔍 All Solutions</option>
+                <option value=".filter-core-network">📡 Core Network (Software &amp; Hardware)</option>
+                <option value=".filter-unified-communications">💬 Unified Communications Platform</option>
+                <option value=".filter-workload-automation">⚙️ Workload Automation</option>
+                <option value=".filter-access-cpe">🔌 Access - Customer Premise Equipment</option>
+                <option value=".filter-marketing-support">📢 Marketing &amp; Customer Support Tools</option>
+                <option value=".filter-business-cyber">🛡️ Business Software &amp; Cybersecurity</option>
+                <option value=".filter-monitoring-analytics">📊 System Monitoring &amp; Analytics</option>
+                <option value=".filter-network-management">🌐 Network Management &amp; Device Security</option>
+                <option value=".filter-data-center">🏢 Data Center &amp; Colocation</option>
+                <option value=".filter-hardware-equipment">🖥️ Hardware &amp; Equipment</option>
+              </select>
+            </div>
           </div>
         </div>
     
@@ -1164,13 +1226,6 @@
 
         <div class="row">
 
-          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
-            <img src="assets/img/team/techteam.png" class="img-fluid" alt="">
-            <div class="section-title">
-              <h3>Technical Services Team</h3>
-            </div>
-          </div> -->
-
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
             <img src="assets/img/team/newimplem.jpg" class="img-fluid" alt="">
             <div class="section-title">
@@ -1199,203 +1254,10 @@
             </div>
           </div>
 
-          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
-            <img src="assets/img/team/sales2.png" class="img-fluid" alt="">
-            <div class="section-title">
-              <h3>Sales Team</h3>
-            </div>
-          </div> -->
-
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
             <img src="assets/img/team/pm.jpg" class="img-fluid" alt="">
             <div class="section-title">
               <h3>Project Management</h3>
-            </div>
-          </div>
-        </div>
-        
-        <!-- <div class="container">
-          <div class="row">
-            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-              <div class="member">
-                <div class="member-img">
-                  <img src="assets/img/team/8-1.png" class="img-fluid" width="100%" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Manuel R. Delos Santos</h4>
-                  <span>Chairman</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="250">
-              <div class="member">
-                <div class="member-img">
-                  <img src="assets/img/team/10-1.png" class="img-fluid" width="100%" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Atty. Hilario B. Paredes</h4>
-                  <span>Corporate Secretary</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-              <div class="member">
-                <div class="member-img">
-                  <img src="assets/img/team/9-1.png" class="img-fluid" width="100%" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Benjamin R. Bustos, Jr.</h4>
-                  <span>President/CEO</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="350">
-              <div class="member">
-                <div class="member-img">
-                  <img src="assets/img/team/6-1.png" class="img-fluid" width="100%" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Dexter Jose Q. Yaptenco</h4>
-                  <span>Director</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-              <div class="member">
-                <div class="member-img">
-                  <img src="assets/img/team/ike.jpg" class="img-fluid" width="100%" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>IKE Gabriel</h4>
-                  <span>Director</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div class="section-title">
-          <h3>Officers</h3>
-          <p>Lorem Ipsum Dolor Sit Amet.</p>
-        </div> -->
-
-        <!-- <div class="container">
-          <div class="row">
-            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-              <div class="member">
-                <div class="member-img">
-                  <img src="assets/img/team/9-1.png" class="img-fluid" width="100%" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Benjamin R. Bustos, Jr.</h4>
-                  <span>President/CEO</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="250">
-              <div class="member">
-                <div class="member-img">
-                  <img src="assets/img/team/2.png" class="img-fluid" width="100%" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Ma. Margarita R. Cruz</h4>
-                  <span>Business Unit Head – VAS</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-              <div class="member">
-                <div class="member-img">
-                  <img src="assets/img/team/1.png" class="img-fluid" width="100%" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Roberto P. Aguinaldo</h4>
-                  <span>Business Unit Head – Products and Services</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="350">
-              <div class="member">
-                <div class="member-img">
-                  <img src="assets/img/team/6-1.png" class="img-fluid" width="100%" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Dexter Jose Q. Yaptenco</h4>
-                  <span>Technical Support Head</span>
-                </div>
-              </div>
-            </div>
-            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200" style="visibility:hidden">
-              <div class="member">
-                <div class="member-img"></div>
-                <div class="member-info"></div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-            <div class="col col-sm d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400" style="visibility:hidden">
             </div>
           </div>
         </div>
@@ -1480,31 +1342,6 @@
             <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1216.3427556258!2d121.0222716756037!3d14.562124986550062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c90e799d4821%3A0xd2c64a6b45a68ae4!2sWireless%20Services%20Asia!5e0!3m2!1sen!2sph!4v1755138854018!5m2!1sen!2sph"frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
           </div>
 
-          <!-- <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message">Error</div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div> -->
-
         </div>
 
       </div>
@@ -1515,81 +1352,14 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
-    <!-- <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
-          <!-- <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>BizLand<span>.</span></h3>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div> -->
-
-          <!-- <div class="col col-sm footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div> -->
 
         </div>
       </div>
     </div>
 
-    <!-- <div class="container py-4">
-      <div class="copyright">
-        &copy; Copyright <strong><span>BizLand</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div> -->
   </footer>
 
   <!-- Activity Modal -->
@@ -1632,12 +1402,47 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <!-- Activities Script - Reads from activities.json -->
+  <!-- Activities Script - Reads from activities.json with Dropdown Integration -->
   <script>
     (function() {
       let activitiesData = [];
       let modalSwiper = null;
       let activitiesSwiper = null;
+
+      // Initialize Isotope and Dropdown Filter
+      function initIsotopeFilter() {
+        const container = document.querySelector('.portfolio-container');
+        if (!container) return false;
+        
+        let iso = Isotope.data(container);
+        if (!iso) {
+          iso = new Isotope(container, {
+            itemSelector: '.portfolio-item',
+            layoutMode: 'fitRows',
+            transitionDuration: '0.6s'
+          });
+        }
+        
+        const dropdown = document.getElementById('solutionFilterDropdown');
+        if (dropdown) {
+          dropdown.addEventListener('change', function(e) {
+            const filterValue = e.target.value;
+            iso.arrange({ filter: filterValue });
+            // Update active class on original hidden filters
+            const filterLis = document.querySelectorAll('#portfolio-flters li');
+            filterLis.forEach(li => {
+              if (li.getAttribute('data-filter') === filterValue) {
+                li.classList.add('filter-active');
+              } else {
+                li.classList.remove('filter-active');
+              }
+            });
+          });
+          iso.arrange({ filter: '*' });
+          return true;
+        }
+        return false;
+      }
 
       // Fetch from activities.json
       fetch('activities.json')
@@ -1712,7 +1517,6 @@
           container.appendChild(slide);
         });
 
-        // Add click handlers
         setTimeout(() => {
           document.querySelectorAll('.activities-slider .card').forEach(card => {
             card.addEventListener('click', function(e) {
@@ -1796,6 +1600,14 @@
           modalSwiper = null;
         }
       });
+
+      // Initialize dropdown filter
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() { setTimeout(initIsotopeFilter, 100); });
+      } else {
+        setTimeout(initIsotopeFilter, 100);
+      }
+      window.addEventListener('load', function() { setTimeout(initIsotopeFilter, 200); });
     })();
   </script>
 </body>
